@@ -1,0 +1,35 @@
+@mixin font-face($family, $file, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family;
+    src: url('../public/fonts/' + $file + '.otf') format('opentype');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include font-face('Moderat', 'Moderat-Light', 200, normal);
+@include font-face('Moderat', 'Moderat-Regular');
+@include font-face('Moderat', 'Moderat-Medium', 500, normal);
+@include font-face('Moderat', 'Moderat-Bold', 700, normal);
+
+body {
+  margin: 0;
+  font-family: Moderat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// baselineCSS
+
+:global {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+  }
+}
