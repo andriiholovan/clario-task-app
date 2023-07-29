@@ -14,9 +14,9 @@ const WelcomeSection = () => {
             phone from being spied on
           </span>
         </h1>
-        <div className={css.description}>
+        <p className={css.description}>
           Try Clario, a smart anti-spy app that effectively protects your privacy.
-        </div>
+        </p>
         <Button className={css.button_main}>
           Protect me now
         </Button>
@@ -27,14 +27,12 @@ const WelcomeSection = () => {
         <div className={css.image_container}>
           <img className={css.animated_image} src={gif} alt="Dog is moving" />
         </div>
+        <h3 className={css.list_title}>The anti-spy Clario app can:</h3>
         <div>
-          <h3 className={css.list_title}>The anti-spy Clario app can:</h3>
-          <div>
-            <p className={css.list_item}>reveal hidden spying apps</p>
-            <p className={css.list_item}>stop silent location tracking</p>
-            <p className={css.list_item}>avoid social media hacks</p>
-            <p className={css.list_item}>provide 24/7 expert security help</p>
-          </div>
+          <p className={css.list_item}>reveal hidden spying apps</p>
+          <p className={css.list_item}>stop silent location tracking</p>
+          <p className={css.list_item}>avoid social media hacks</p>
+          <p className={css.list_item}>provide 24/7 expert security help</p>
         </div>
       </div>
     </section>
