@@ -20,7 +20,7 @@ const ScrollProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
   const handleScroll = () => {
     if (priceRef.current) {
       scrollTo(priceRef.current.offsetTop - TITLE_OFFSET);
-      console.log('Scroll click counter:', ++counter);
+      console.log('CLICK TO SCROLL COUNTER:', ++counter);
     }
   };
   return (

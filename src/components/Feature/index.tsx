@@ -1,4 +1,5 @@
 import React from 'react';
+import { useIntersection } from '../../hooks';
 
 import css from './style.module.scss'
 
@@ -24,9 +25,22 @@ const Feature: React.FC<FeatureProps> = ({
   description,
   advantageList,
 }) => {
+  const triggerRef = React.useRef<HTMLDivElement>(null);
+  const isVisible = useIntersection(triggerRef);
+
+  React.useEffect(() => {
+    if (isVisible) {
+      console.log('IS SHOWN FEATURE: ', title);
+    }
+  }, [isVisible]);
+
   return (
     <>
-      <div className={css.image_container} style={{ background }}>
+      <div
+        className={css.image_container}
+        ref={triggerRef}
+        style={{ background }}
+      >
         <img className={css.image} src={image} alt={alt} />
       </div>
       <h3 className={css.title}>{title}</h3>
