@@ -1,5 +1,5 @@
-import React, {useRef} from 'react';
-import Button from '../Button';
+import React from 'react';
+import { Button } from '../common';
 import { ClarioLogo } from '../../assets/svg';
 import { debounce } from '../../helpers';
 
@@ -8,7 +8,7 @@ import css from './style.module.scss'
 const CTA_BUTTON_OFFSET: number = 380;
 
 const Header = () => {
-  const ref = useRef(null);
+  const ref = React.useRef<HTMLImageElement>(null);
   const [isSticky, setIsSticky] = React.useState<boolean>(false);
 
   React.useEffect(() => {
@@ -25,7 +25,11 @@ const Header = () => {
         <div className={css.header_logo}>
           <img ref={ref} src={ClarioLogo} alt="Clario header logo"/>
         </div>
-        {isSticky && <Button className={css.header_button}>Protect me now</Button>}
+        {isSticky && (
+          <Button className={css.header_button} >
+            Protect me now
+          </Button>
+        )}
       </div>
     </header>
   )

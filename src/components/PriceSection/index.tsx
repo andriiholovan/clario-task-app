@@ -1,9 +1,8 @@
 import React from 'react';
 import * as icons from '../../assets/svg';
-import Button from '../Button';
+import { Button, Timer } from '../common';
 
 import css from './style.module.scss'
-import Timer from '../Timer';
 
 type Advantage = {
   icon: string;

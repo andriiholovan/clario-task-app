@@ -1,0 +1,25 @@
+.footer {
+  &_container {
+    width: 272px;
+    height: 70px;
+    padding: 40px 0 20px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &_logo {
+    width: 80px;
+    height: 22px;
+  }
+
+  &_company {
+    margin: 7px auto 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
