@@ -1,10 +1,12 @@
 import React from 'react';
 import gif from '../../assets/redar_2x.gif';
 import { MainButton, MainTitle } from '../common';
+import { useScroll } from '../../context/ScrollProvider';
 
 import css from './style.module.scss'
 
 const WelcomeSection = () => {
+  const { handleScroll } = useScroll();
   return (
     <section className={css.section}>
       <div className={css.container}>
@@ -12,7 +14,7 @@ const WelcomeSection = () => {
         <p className={css.description}>
           Try Clario, a smart anti-spy app that effectively protects your privacy.
         </p>
-        <MainButton />
+        <MainButton handleClick={handleScroll} />
         <div className={css.logo_group}>
           <span className={css.apple_logo}>iOS</span>
           <span className={css.desktop_logo}>macOS, Windows</span>

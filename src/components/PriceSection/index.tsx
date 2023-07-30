@@ -1,6 +1,7 @@
 import React from 'react';
 import * as icons from '../../assets/svg';
 import { Button, Timer } from '../common';
+import { useScroll } from '../../context/ScrollProvider';
 
 import css from './style.module.scss'
 
@@ -17,10 +18,11 @@ const ADVANTAGES: Advantage[] = [
 ];
 
 const PriceSection = () => {
+  const { priceRef } = useScroll();
   return (
     <section className={css.section}>
       <div className={css.container}>
-        <h2 className={css.title}>
+        <h2 className={css.title} ref={priceRef}>
           Start your spy-free week for as low as
         </h2>
         <div className={css.price_container}>

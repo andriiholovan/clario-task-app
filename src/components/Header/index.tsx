@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '../common';
 import { ClarioLogo } from '../../assets/svg';
 import { debounce } from '../../helpers';
+import { useScroll } from '../../context/ScrollProvider';
 
 import css from './style.module.scss'
 
@@ -10,6 +11,7 @@ const CTA_BUTTON_OFFSET: number = 380;
 const Header = () => {
   const ref = React.useRef<HTMLImageElement>(null);
   const [isSticky, setIsSticky] = React.useState<boolean>(false);
+  const { handleScroll } = useScroll();
 
   React.useEffect(() => {
     const callback = debounce(() => {
@@ -26,7 +28,7 @@ const Header = () => {
           <img ref={ref} src={ClarioLogo} alt="Clario header logo"/>
         </div>
         {isSticky && (
-          <Button className={css.header_button} >
+          <Button className={css.header_button} handleClick={handleScroll}>
             Protect me now
           </Button>
         )}

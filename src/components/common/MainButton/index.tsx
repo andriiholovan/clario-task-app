@@ -3,8 +3,12 @@ import Button from '../Button';
 
 import css from './style.module.scss';
 
-const MainButton = () => (
-  <Button className={css.button_main} >
+type MainButtonProps = {
+  handleClick: () => void;
+}
+
+const MainButton: React.FC<MainButtonProps> = ({ handleClick }) => (
+  <Button className={css.button_main} handleClick={handleClick}>
       Protect me now
   </Button>
 );

@@ -6,17 +6,20 @@ import HowToSection from './components/HowToSection';
 import PriceSection from './components/PriceSection';
 import ReminderSection from './components/ReminderSection';
 import Footer from './components/Footer';
+import ScrollProvider from './context/ScrollProvider';
 
 function App() {
   return (
     <div>
-      <Header />
-      <WelcomeSection />
-      <CommonSections />
-      <HowToSection />
-      <PriceSection />
-      <ReminderSection />
-      <Footer />
+      <ScrollProvider>
+        <Header />
+        <WelcomeSection />
+        <CommonSections />
+        <HowToSection />
+        <PriceSection />
+        <ReminderSection />
+        <Footer />
+      </ScrollProvider>
     </div>
   );
 }
