@@ -1,0 +1,88 @@
+.container {
+  width: 272px;
+  margin: auto;
+  padding: 30px 0 15px;
+  text-align: center;
+}
+
+.title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+  &_lineStart {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  &_lineEnd {
+    color: #5CD6C0;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+}
+
+.step_container {
+  display: flex;
+  margin: 30px auto 30px;
+  width: 240px;
+
+  &:last-child:after {
+    position: absolute;
+    right: 40px;
+    content: url('../../assets/svg/Chevron_up.svg');
+  }
+
+  &:not(:last-child):after {
+    position: absolute;
+    right: 40px;
+    content: url('../../assets/svg/Chevron_down.svg');
+  }
+
+  &:last-child {
+    .step_number {
+      background: #5CD6C0;
+    }
+
+    hr {
+      display: none;
+    }
+
+    .step_title {
+      color: #5CD6C0;
+    }
+  }
+}
+
+.step_number {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  background: #151D51;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  hr {
+    border: none;
+    border-top: 1px dashed black;
+    transform: rotate(90deg);
+    margin-top: 15px;
+  }
+}
+
+.step_title {
+  margin: 0 0 0 8px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+}
+
+.step_description {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 12px 0 0 8px;
+}
