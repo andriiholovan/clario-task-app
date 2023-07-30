@@ -1,5 +1,5 @@
-import * as images from '../assets/png';
-import * as icons from '../assets/svg';
+import * as images from '../../assets/png';
+import * as icons from '../../assets/svg';
 
 const FEATURES = [{
   id: 'scan',

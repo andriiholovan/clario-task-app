@@ -1,6 +1,6 @@
 import React from 'react';
-import FeatureSection from '../FeatureSection';
-import FEATURES from '../../constants/features';
+import Feature from '../Feature';
+import FEATURES from '../Feature/features';
 import css from './style.module.scss'
 
 const CommonSections = () => {
@@ -11,7 +11,7 @@ const CommonSections = () => {
           Clario helps you easily avoid spying.
         </h2>
         {FEATURES.map(feature => (
-          <FeatureSection
+          <Feature
             key={feature.id}
             background={feature.background}
             image={feature.image}
