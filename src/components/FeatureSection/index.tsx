@@ -33,7 +33,7 @@ const Feature: React.FC<FeatureProps> = ({
       <p className={css.description}>{description}</p>
       <div className={css.item_container}>
         {advantageList.map(advantage=> (
-          <div className={css.item_wrapper}>
+          <div key={advantage.description} className={css.item_wrapper}>
             <img src={advantage.icon} alt={advantage.description}/>
             <p className={css.item_description}>{advantage.description}</p>
           </div>

@@ -1,11 +1,50 @@
 .header {
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header_isSticky {
+  background: #FFFFFF;
+  position: fixed;
+  z-index: 1;
+  animation: slideDown 0.35s ease-out;
+}
+
+.header_container {
+  width: 272px;
   height: 56px;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header__logo {
+.header_logo {
   width: 80px;
   height: 22px;
+}
+
+.header_button {
+  margin-left: 54px;
+  padding: 8px 15px;
+  border-radius: 60px;
+  background: #483FDD;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
