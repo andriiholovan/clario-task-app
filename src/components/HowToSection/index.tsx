@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+
 import css from './style.module.scss'
 
 type Step = {
@@ -25,8 +26,8 @@ const HowToSection = () => {
         </h2>
         <div>
           {STEPS.map((step, index) => (
-            <>
-              <div className={css.step_container} key={step.title}>
+            <Fragment key={step.title}>
+              <div className={css.step_container}>
                 <div className={css.step_number}>
                   {index + 1}
                   <hr />
@@ -36,7 +37,7 @@ const HowToSection = () => {
                   {step.description && <p className={css.step_description}>{step.description}</p>}
                 </div>
               </div>
-            </>
+            </Fragment>
           ))}
         </div>
       </div>

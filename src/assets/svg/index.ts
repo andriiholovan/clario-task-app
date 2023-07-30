@@ -12,6 +12,12 @@ import Widget from './Widget.svg';
 import Alert from './Alert.svg';
 import Spy from './Spy.svg';
 import NoSpy from './NoSpy.svg';
+import Device_count_3 from './Device_count_3.svg';
+import Shield from './Shield.svg';
+import AntiSpy from './AntiSpy.svg';
+import Support from './Support.svg';
+import Money_back from './Money_back.svg';
+import Downloads from './Downloads.svg';
 
 export {
   ClarioLogo,
@@ -28,4 +34,10 @@ export {
   Alert,
   Spy,
   NoSpy,
+  Device_count_3,
+  Shield,
+  AntiSpy,
+  Support,
+  Money_back,
+  Downloads,
 }
