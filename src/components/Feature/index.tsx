@@ -30,7 +30,7 @@ const Feature: React.FC<FeatureProps> = ({
 
   React.useEffect(() => {
     if (isVisible) {
-      console.log('IS SHOWN FEATURE: ', title);
+      console.log('Is Shown Feature:', title);
     }
   }, [isVisible]);
 
