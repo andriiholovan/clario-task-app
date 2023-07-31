@@ -1,0 +1,53 @@
+.slide {
+  width: 224px;
+  height: 260px;
+  margin: auto;
+  padding: 40px 24px;
+  border-radius: 20px;
+
+  &_container {
+    margin: 0 20px;
+  }
+
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    height: 100%;
+  }
+
+  &_header_wrapper {
+    width: 224px;
+  }
+
+  &_text {
+    margin-top: 20px;
+  }
+
+  &_footer {
+    margin: 0;
+  }
+
+  &_trustpilot {
+    background: #EFF1FF;
+    color: #3D317C;
+  }
+  &_apple {
+    background: #E6F2FE;
+    color: #1D367C;
+  }
+  &_google {
+    background: #EAF5E4;
+    color: #305938;
+  }
+}
+
+.arrow {
+  position: absolute;
+  background: #FFFFFF;
+  width: 48px;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1000;
+}

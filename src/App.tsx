@@ -4,6 +4,7 @@ import WelcomeSection from './components/WelcomeSection';
 import CommonSections from './components/CommonSections';
 import HowToSection from './components/HowToSection';
 import PriceSection from './components/PriceSection';
+import ReviewsSection from './components/ReviewsSection';
 import ReminderSection from './components/ReminderSection';
 import Footer from './components/Footer';
 import ScrollProvider from './context/ScrollProvider';
@@ -17,6 +18,7 @@ function App() {
         <CommonSections />
         <HowToSection />
         <PriceSection />
+        <ReviewsSection />
         <ReminderSection />
         <Footer />
       </ScrollProvider>

@@ -48,7 +48,7 @@ const Feature: React.FC<FeatureProps> = ({
       <div className={css.item_container}>
         {advantageList.map(advantage=> (
           <div key={advantage.description} className={css.item_wrapper}>
-            <img src={advantage.icon} alt={advantage.description}/>
+            <img src={advantage.icon} alt={advantage.description} />
             <p className={css.item_description}>{advantage.description}</p>
           </div>
         ))}

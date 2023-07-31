@@ -18,6 +18,11 @@ import AntiSpy from './AntiSpy.svg';
 import Support from './Support.svg';
 import Money_back from './Money_back.svg';
 import Downloads from './Downloads.svg';
+import Trustpilot from './Trustpilot.svg';
+import Google_Play from './Google_Play.svg';
+import Apple from './Apple.svg';
+import Arrow_left from './Arrow_left.svg';
+import Arrow_right from './Arrow_right.svg';
 
 export {
   ClarioLogo,
@@ -40,4 +45,9 @@ export {
   Support,
   Money_back,
   Downloads,
+  Trustpilot,
+  Google_Play,
+  Apple,
+  Arrow_left,
+  Arrow_right,
 }

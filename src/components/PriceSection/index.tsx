@@ -51,7 +51,7 @@ const PriceSection = () => {
               {ADVANTAGES.map(advantage => (
                 <div key={advantage.title} className={css.advantage_wrapper}>
                   <div className={css.advantage_image}>
-                    <img src={advantage.icon} alt={advantage.title}/>
+                    <img src={advantage.icon} alt={advantage.title} />
                   </div>
                   <p className={css.advantage_title}>{advantage.title}</p>
                 </div>
