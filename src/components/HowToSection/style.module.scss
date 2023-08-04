@@ -27,16 +27,17 @@
   display: flex;
   margin: 30px auto 30px;
   width: 240px;
+  position: relative;
 
   &:last-child:after {
     position: absolute;
-    right: 40px;
+    right: -12px;
     content: url('../../assets/svg/Chevron_up.svg');
   }
 
   &:not(:last-child):after {
     position: absolute;
-    right: 40px;
+    right: -12px;
     content: url('../../assets/svg/Chevron_down.svg');
   }
 
