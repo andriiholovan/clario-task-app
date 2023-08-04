@@ -14,6 +14,7 @@ const customArrowStyles = {
   borderRadius: '50%',
   padding: '10px 12px',
   boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.10)',
+  cursor: 'pointer',
 }
 
 type ArrowProps = {
@@ -27,7 +28,7 @@ const PrevArrow: React.FC<ArrowProps> = ({ style, onClick }) => {
       style={{ ...style, ...customArrowStyles, bottom: '-25px', left: '80px', }}
       onClick={onClick}
     >
-      <img src={icons.Arrow_left} alt=""/>
+      <img src={icons.Arrow_left} alt="Left arrow"/>
     </div>
   );
 }
@@ -38,7 +39,7 @@ const NextArrow: React.FC<ArrowProps> = ({ style, onClick }) => {
       style={{ ...style, ...customArrowStyles, bottom: '-25px', left: '140px', }}
       onClick={onClick}
     >
-      <img src={icons.Arrow_right} alt=""/>
+      <img src={icons.Arrow_right} alt="Right arrow"/>
     </div>
   );
 }
